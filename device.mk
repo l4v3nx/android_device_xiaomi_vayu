@@ -210,9 +210,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# Firmware [Inherit when available]
-$(call inherit-product-if-exists, firmware/xiaomi/vayu/Android.mk)
-
 # Framework detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
