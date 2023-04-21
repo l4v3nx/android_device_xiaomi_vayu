@@ -550,4 +550,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml
 
+# ZRAM writeback
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.zram.mark_idle_delay_mins=60 \
+    ro.zram.first_wb_delay_mins=180 \
+    ro.zram.periodic_wb_delay_hours=24
+
 include vendor/xiaomi/vayu/vayu-vendor.mk
