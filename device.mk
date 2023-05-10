@@ -384,11 +384,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
-# NGA
-PRODUCT_PACKAGES += \
-    NgaResources \
-    nga
-
 # Overlays
 PRODUCT_PACKAGES += \
    CarrierConfigOverlayVayu \
